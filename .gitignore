@@ -1,0 +1,54 @@
+# -------------------------------------------------------
+# GLOBAL
+# -------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+logs/
+.env
+.env.*
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------------------------------------
+# CLIENT (React / Vite)
+# -------------------------------------------------------
+client/node_modules/
+client/dist/
+client/.vite/
+client/.env
+client/.env.*
+client/.eslintcache
+client/.parcel-cache/
+client/.next/
+client/out/
+
+# -------------------------------------------------------
+# SERVER (FastAPI / Python)
+# -------------------------------------------------------
+server/__pycache__/
+server/*.pyc
+server/*.pyo
+server/*.pyd
+server/.pytest_cache/
+server/.mypy_cache/
+server/.ruff_cache/
+server/.coverage
+server/coverage.xml
+
+# virtual environments
+server/venv/
+server/.venv/
+venv/
+.venv/
+
+# Uvicorn reload artifacts
+server/.uvicorn*
+
+# -------------------------------------------------------
+# OPTIONAL: production artifacts (if generated)
+# -------------------------------------------------------
+dist/
+build/
