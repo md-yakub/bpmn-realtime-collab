@@ -19,9 +19,16 @@ export default [
       parser: tsParser,
       ecmaVersion: 'latest',
       sourceType: 'module',
+
       globals: {
         window: 'readonly',
         document: 'readonly',
+        console: 'readonly',
+        HTMLElement: 'readonly',
+        HTMLDivElement: 'readonly',
+        WebSocket: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
       },
     },
     settings: {
